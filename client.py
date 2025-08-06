@@ -51,7 +51,6 @@ async def chat_mode(agent_url: str = "http://localhost:9999"):
                 print(chunk.model_dump(mode='json', exclude_none=True))
 
 
-
 async def main(agent_url: str = "http://localhost:9999"):
     async with httpx.AsyncClient() as httpx_client:
         resolver = A2ACardResolver(
